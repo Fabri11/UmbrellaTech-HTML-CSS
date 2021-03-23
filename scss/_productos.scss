@@ -1,0 +1,189 @@
+/* Productos */
+/* Header Productos */
+
+.header__productos{
+    width: 100%;
+    height: 600px;
+    background: #4F80F5;
+    background: -webkit-linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/need_for_speed_heat_video_game_car-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/need_for_speed_heat_video_game_car-wallpaper-1920x1200.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Footer Productos */
+
+.footer__productos{
+    background: #4F80F5;
+    background: -webkit-linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/for_honor_4k_hd-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/for_honor_4k_hd-wallpaper-1920x1200.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Ul and Li */
+
+ul li{
+    list-style:none;
+}
+
+/* Títulos principales */
+
+.text__principal{
+    display: block;
+    margin: 0;
+    color: #233D6E;
+    background-color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 60px;
+    border-radius: 4px;
+}
+
+/* Twitts/ Twitter */
+
+.contenedor__twitt{
+    padding: 3%;
+}
+
+.twitter-tweet{
+    display: inline-flex;
+    flex-direction: row;
+    margin-left: 260px;
+}
+
+/* Media queries Productos */
+
+@media screen and (max-width:540px){
+    .titulo__principal{
+        text-align: center;
+    }
+
+    .text__principal{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .procesadorProducto,
+    .motherProducto,
+    .ramProducto,
+    .gpuProducto,
+    .discosProducto,
+    .gabineteProducto,
+    .fuenteProducto,
+    .monitorProducto{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:1 ,1fr;
+        grid-template-areas: "elemento";
+        grid-gap: 70px;
+        overflow-x: hidden;
+    }
+
+    .twitter-tweet{
+        display: inline-flex;
+        flex-direction: row;
+        margin: auto;
+        width: auto;
+        height: 500px;
+        overflow-x: hidden;
+    }
+    h5{
+        width: 50%;
+        display: inline-flex;
+        text-align: center;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width:900px){
+    .titulo__principal{
+        text-align: center;
+    }
+
+    .text__principal{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .procesadorProducto,
+    .motherProducto,
+    .ramProducto,
+    .gpuProducto,
+    .discosProducto,
+    .gabineteProducto,
+    .fuenteProducto,
+    .monitorProducto{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:1 ,1fr;
+        grid-template-areas: "elemento";
+        grid-gap: 70px;
+        overflow-x: hidden;
+    }
+
+    .twitter-tweet{
+        display: inline-flex;
+        flex-direction: row;
+        margin: auto;
+        width: auto;
+        height: 500px;
+    }
+    h5{
+        width: 50%;
+        display: inline-flex;
+        text-align: center;
+        flex-direction: row;
+    }
+}
+
+
+@media screen and (max-width:1100px){
+    .titulo__principal{
+        text-align: center;
+    }
+    .text__principal{
+        display: flex;
+        justify-content:center;
+        flex-direction: column;
+        text-align: center;
+    }
+    .procesadorProducto,
+    .motherProducto,
+    .ramProducto,
+    .gpuProducto,
+    .discosProducto,
+    .gabineteProducto,
+    .fuenteProducto,
+    .monitorProducto{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:1 ,1fr;
+        grid-template-areas: "elemento";
+        grid-gap: 70px;
+    }
+    .twitter-tweet{
+        display: inline-flex;
+        flex-direction: row;
+        margin: auto;
+        width: auto;
+        height: 500px;
+    }
+    h5{
+        width: 50%;
+        display: inline-flex;
+        text-align: center;
+        flex-direction: row;
+    }
+
+}

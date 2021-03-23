@@ -1,0 +1,220 @@
+/* Armá tu pc */
+/* Header Armá tu pc */
+
+.header__arma{
+    width: 100%;
+    height: 600px;
+    background: #4F80F5;
+    background: -webkit-linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+/* Footer Armá tu pc */
+
+.footer__arma{
+    background: #4F80F5;
+    background: -webkit-linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor__footer--pagina{
+    display: flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #ccc;
+}
+
+.contenedor__footer--cont{
+    text-align: center;
+}
+
+.contenedor__footer--cont h4{
+    color: #fff;
+    border-bottom: 3px solid #ccc;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.contenedor__footer--cont p{
+    color: #ccc;
+}
+
+/* Título body Armá tu pc */
+
+.text__arma{
+    display: inline-block;
+    margin-left: 30%;
+    color:#233D6E;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 60px;
+    border-radius: 4px;
+    background-color: #e0e0e0;
+    padding: 20px;
+}
+.text__arma--text{
+    display: flex;
+    color: #233D6E;
+    margin-top: 20px;
+}
+.comprar{
+    display: inline-flex;
+    justify-items: right;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    padding: 2px;
+    height: 30px;
+    color: black;
+    background:#4F80F5 ;
+}
+.img__arma--img{
+    display: inline-block;
+    margin-bottom:20px;
+    margin-left: 80px;
+}
+
+/* Productos para Armar la pc */
+
+.elemento{
+    grid-area: "elemento";
+    display: inline;
+    padding: 10px;
+    margin: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #e0e0e0;
+    border-radius: 4px;
+    width: 300px;
+}
+.procesador__producto,
+.mother__producto,
+.ram__producto,
+.gpu__producto,
+.discos__producto,
+.gabinete__producto,
+.fuente__producto,
+.monitor__producto{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:1 ,1fr;
+    grid-template-areas: "elemento elemento";
+    grid-gap: 15px;
+}
+.procesadorProducto,
+.motherProducto,
+.ramProducto,
+.gpuProducto,
+.discosProducto,
+.gabineteProducto,
+.fuenteProducto,
+.monitorProducto{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows:1 ,1fr;
+    grid-template-areas: "elemento";
+    grid-gap: 70px;
+}
+
+/* Media queries Armá tu pc*/
+@media screen and (max-width:540px){
+/* Arma tu pc */
+.procesador__producto,
+.mother__producto,
+.ram__producto,
+.gpu__producto,
+.discos__producto,
+.gabinete__producto,
+.fuente__producto,
+.monitor__producto{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows:1 ,1fr;
+    grid-template-areas: "elemento";
+    grid-gap: 15px;
+}
+
+.text__arma{
+    width: 50%;
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+}
+
+.text__arma-text{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: 0;
+}
+.img__arma-img{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+}
+}
+
+
+@media screen and (max-width:900px){
+    .procesador__producto,
+    .mother__producto,
+    .ram__producto,
+    .gpu__producto,
+    .discos__producto,
+    .gabinete__producto,
+    .fuente__producto,
+    .monitor__producto{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows:1 ,1fr;
+        grid-template-areas: "elemento";
+        grid-gap: 15px;
+    }
+
+    .text__arma{
+        width: 50%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    nav{
+        text-align: center;
+        padding: 30px 0 0 0;
+    }
+
+    nav > a{
+        margin-right: 5px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:1100px){
+    .text__arma{
+        width: 50%;
+        display: flex;
+        text-align: center;
+        flex-direction: column;
+        margin: 0;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
