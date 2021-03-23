@@ -2,12 +2,12 @@
 /* Armá tu pc */
 /* Header Armá tu pc */
 
-.header__arma{
+.header__arma {
     width: 100%;
     height: 600px;
     background: #4F80F5;
-    background: -webkit-linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
-    background: linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
+    background: -webkit-linear-gradient(to right, hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593)), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right, hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593)), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -15,10 +15,10 @@
 
 /* Footer Armá tu pc */
 
-.footer__arma{
+.footer__arma {
     background: #4F80F5;
-    background: -webkit-linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
-    background: linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
+    background: -webkit-linear-gradient(to right, hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593)), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right, hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593)), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -27,7 +27,7 @@
     overflow: hidden;
 }
 
-.contenedor__footer--pagina{
+.contenedor__footer--pagina {
     display: flex;
     width: 90%;
     justify-content: space-evenly;
@@ -36,27 +36,27 @@
     border-bottom: 1px solid #ccc;
 }
 
-.contenedor__footer--cont{
+.contenedor__footer--cont {
     text-align: center;
 }
 
-.contenedor__footer--cont h4{
+.contenedor__footer--cont h4 {
     color: #fff;
     border-bottom: 3px solid #ccc;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.contenedor__footer--cont p{
+.contenedor__footer--cont p {
     color: #ccc;
 }
 
 /* Título body Armá tu pc */
 
-.text__arma{
+.text__arma {
     display: inline-block;
     margin-left: 30%;
-    color:#233D6E;
+    color: #233D6E;
     text-align: center;
     font-size: 30px;
     margin-bottom: 60px;
@@ -64,12 +64,14 @@
     background-color: #e0e0e0;
     padding: 20px;
 }
-.text__arma--text{
+
+.text__arma--text {
     display: flex;
     color: #233D6E;
     margin-top: 20px;
 }
-.comprar{
+
+.comprar {
     display: inline-flex;
     justify-items: right;
     text-decoration: none;
@@ -78,17 +80,18 @@
     padding: 2px;
     height: 30px;
     color: black;
-    background:#4F80F5 ;
+    background: #4F80F5;
 }
-.img__arma--img{
+
+.img__arma--img {
     display: inline-block;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     margin-left: 80px;
 }
 
 /* Productos para Armar la pc */
 
-.elemento{
+.elemento {
     grid-area: "elemento";
     display: inline;
     padding: 10px;
@@ -99,6 +102,7 @@
     border-radius: 4px;
     width: 300px;
 }
+
 .procesador__producto,
 .mother__producto,
 .ram__producto,
@@ -106,13 +110,14 @@
 .discos__producto,
 .gabinete__producto,
 .fuente__producto,
-.monitor__producto{
+.monitor__producto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:1 ,1fr;
+    grid-template-rows: 1, 1fr;
     grid-template-areas: "elemento elemento";
     grid-gap: 15px;
 }
+
 .procesadorProducto,
 .motherProducto,
 .ramProducto,
@@ -120,55 +125,18 @@
 .discosProducto,
 .gabineteProducto,
 .fuenteProducto,
-.monitorProducto{
+.monitorProducto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:1 ,1fr;
+    grid-template-rows: 1, 1fr;
     grid-template-areas: "elemento";
     grid-gap: 70px;
 }
 
 /* Media queries Armá tu pc*/
-@media screen and (max-width:540px){
-/* Arma tu pc */
-.procesador__producto,
-.mother__producto,
-.ram__producto,
-.gpu__producto,
-.discos__producto,
-.gabinete__producto,
-.fuente__producto,
-.monitor__producto{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows:1 ,1fr;
-    grid-template-areas: "elemento";
-    grid-gap: 15px;
-}
+@media screen and (max-width:540px) {
 
-.text__arma{
-    width: 50%;
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-}
-
-.text__arma-text{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-}
-.img__arma-img{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-}
-}
-
-
-@media screen and (max-width:900px){
+    /* Arma tu pc */
     .procesador__producto,
     .mother__producto,
     .ram__producto,
@@ -176,15 +144,55 @@
     .discos__producto,
     .gabinete__producto,
     .fuente__producto,
-    .monitor__producto{
+    .monitor__producto {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows:1 ,1fr;
+        grid-template-rows: 1, 1fr;
         grid-template-areas: "elemento";
         grid-gap: 15px;
     }
 
-    .text__arma{
+    .text__arma {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text__arma-text {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .img__arma-img {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+
+    .procesador__producto,
+    .mother__producto,
+    .ram__producto,
+    .gpu__producto,
+    .discos__producto,
+    .gabinete__producto,
+    .fuente__producto,
+    .monitor__producto {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1, 1fr;
+        grid-template-areas: "elemento";
+        grid-gap: 15px;
+    }
+
+    .text__arma {
         width: 50%;
         display: flex;
         text-align: center;
@@ -194,12 +202,12 @@
         margin-left: auto;
     }
 
-    nav{
+    nav {
         text-align: center;
         padding: 30px 0 0 0;
     }
 
-    nav > a{
+    nav>a {
         margin-right: 5px;
         display: flex;
         flex-direction: column;
@@ -207,8 +215,8 @@
 }
 
 
-@media screen and (max-width:1100px){
-    .text__arma{
+@media screen and (max-width:1100px) {
+    .text__arma {
         width: 50%;
         display: flex;
         text-align: center;
@@ -219,16 +227,15 @@
     }
 }
 
-=======
 /* Armá tu pc */
 /* Header Armá tu pc */
 
-.header__arma{
+.header__arma {
     width: 100%;
     height: 600px;
     background: #4F80F5;
-    background: -webkit-linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
-    background: linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
+    background: -webkit-linear-gradient(to right, hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593)), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right, hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593)), url(../assets/banner/halo_infinite_video_game_2020_2021-wallpaper-1920x1200.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -236,10 +243,10 @@
 
 /* Footer Armá tu pc */
 
-.footer__arma{
+.footer__arma {
     background: #4F80F5;
-    background: -webkit-linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
-    background: linear-gradient(to right,hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593) ), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
+    background: -webkit-linear-gradient(to right, hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593)), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
+    background: linear-gradient(to right, hsla(222, 89%, 64%, 0.593), hsla(221, 24%, 40%, 0.593)), url(../assets/banner/far_cry_3_2012_video_game-wallpaper-1920x1200.jpg);
     background-size: cover;
     background-attachment: fixed;
     position: relative;
@@ -248,7 +255,7 @@
     overflow: hidden;
 }
 
-.contenedor__footer--pagina{
+.contenedor__footer--pagina {
     display: flex;
     width: 90%;
     justify-content: space-evenly;
@@ -257,27 +264,27 @@
     border-bottom: 1px solid #ccc;
 }
 
-.contenedor__footer--cont{
+.contenedor__footer--cont {
     text-align: center;
 }
 
-.contenedor__footer--cont h4{
+.contenedor__footer--cont h4 {
     color: #fff;
     border-bottom: 3px solid #ccc;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
-.contenedor__footer--cont p{
+.contenedor__footer--cont p {
     color: #ccc;
 }
 
 /* Título body Armá tu pc */
 
-.text__arma{
+.text__arma {
     display: inline-block;
     margin-left: 30%;
-    color:#233D6E;
+    color: #233D6E;
     text-align: center;
     font-size: 30px;
     margin-bottom: 60px;
@@ -285,12 +292,14 @@
     background-color: #e0e0e0;
     padding: 20px;
 }
-.text__arma--text{
+
+.text__arma--text {
     display: flex;
     color: #233D6E;
     margin-top: 20px;
 }
-.comprar{
+
+.comprar {
     display: inline-flex;
     justify-items: right;
     text-decoration: none;
@@ -299,17 +308,18 @@
     padding: 2px;
     height: 30px;
     color: black;
-    background:#4F80F5 ;
+    background: #4F80F5;
 }
-.img__arma--img{
+
+.img__arma--img {
     display: inline-block;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     margin-left: 80px;
 }
 
 /* Productos para Armar la pc */
 
-.elemento{
+.elemento {
     grid-area: "elemento";
     display: inline;
     padding: 10px;
@@ -320,6 +330,7 @@
     border-radius: 4px;
     width: 300px;
 }
+
 .procesador__producto,
 .mother__producto,
 .ram__producto,
@@ -327,13 +338,14 @@
 .discos__producto,
 .gabinete__producto,
 .fuente__producto,
-.monitor__producto{
+.monitor__producto {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:1 ,1fr;
+    grid-template-rows: 1, 1fr;
     grid-template-areas: "elemento elemento";
     grid-gap: 15px;
 }
+
 .procesadorProducto,
 .motherProducto,
 .ramProducto,
@@ -341,55 +353,18 @@
 .discosProducto,
 .gabineteProducto,
 .fuenteProducto,
-.monitorProducto{
+.monitorProducto {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows:1 ,1fr;
+    grid-template-rows: 1, 1fr;
     grid-template-areas: "elemento";
     grid-gap: 70px;
 }
 
 /* Media queries Armá tu pc*/
-@media screen and (max-width:540px){
-/* Arma tu pc */
-.procesador__producto,
-.mother__producto,
-.ram__producto,
-.gpu__producto,
-.discos__producto,
-.gabinete__producto,
-.fuente__producto,
-.monitor__producto{
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows:1 ,1fr;
-    grid-template-areas: "elemento";
-    grid-gap: 15px;
-}
+@media screen and (max-width:540px) {
 
-.text__arma{
-    width: 50%;
-    display: flex;
-    justify-content:center;
-    flex-direction: column;
-}
-
-.text__arma-text{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: 0;
-}
-.img__arma-img{
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    margin: auto;
-}
-}
-
-
-@media screen and (max-width:900px){
+    /* Arma tu pc */
     .procesador__producto,
     .mother__producto,
     .ram__producto,
@@ -397,15 +372,55 @@
     .discos__producto,
     .gabinete__producto,
     .fuente__producto,
-    .monitor__producto{
+    .monitor__producto {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows:1 ,1fr;
+        grid-template-rows: 1, 1fr;
         grid-template-areas: "elemento";
         grid-gap: 15px;
     }
 
-    .text__arma{
+    .text__arma {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .text__arma-text {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .img__arma-img {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+    }
+}
+
+
+@media screen and (max-width:900px) {
+
+    .procesador__producto,
+    .mother__producto,
+    .ram__producto,
+    .gpu__producto,
+    .discos__producto,
+    .gabinete__producto,
+    .fuente__producto,
+    .monitor__producto {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: 1, 1fr;
+        grid-template-areas: "elemento";
+        grid-gap: 15px;
+    }
+
+    .text__arma {
         width: 50%;
         display: flex;
         text-align: center;
@@ -415,12 +430,12 @@
         margin-left: auto;
     }
 
-    nav{
+    nav {
         text-align: center;
         padding: 30px 0 0 0;
     }
 
-    nav > a{
+    nav>a {
         margin-right: 5px;
         display: flex;
         flex-direction: column;
@@ -428,8 +443,8 @@
 }
 
 
-@media screen and (max-width:1100px){
-    .text__arma{
+@media screen and (max-width:1100px) {
+    .text__arma {
         width: 50%;
         display: flex;
         text-align: center;
@@ -439,5 +454,3 @@
         margin-left: auto;
     }
 }
-
->>>>>>> 63f4ff8871080c047c1a31335844531a9bb67b8d
