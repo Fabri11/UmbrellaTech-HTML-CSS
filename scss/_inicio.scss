@@ -79,7 +79,7 @@ body {
 
 /* NAV and Wave*/
 
-nav {
+.nav__nav {
     text-align: right;
     padding: 30px 50px 0 0;
 }
@@ -94,6 +94,22 @@ nav>a {
 
 nav>a:hover {
     text-decoration: underline;
+    background-color: #b0b0b0;
+}
+
+.nav li a{
+    text-decoration: none;
+    display: block;
+    padding: 10px 15px;
+}
+
+.nav > li {
+    float: left;
+}
+
+.nav li ul{
+    display: none;
+    position: absolute;
 }
 
 .wave {
