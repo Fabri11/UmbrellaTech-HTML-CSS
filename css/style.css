@@ -83,7 +83,6 @@ nav > a:hover{
   text-decoration: underline ;
 }
 
-
 .wave {
   position: absolute;
   bottom: 0;
@@ -232,8 +231,6 @@ p {
     margin-right: 5px;
     display: flex;
     flex-direction: column; }
-  .img__cuenta-header {
-    margin-left: 155px; }
   .contenedor__productos {
     display: flex;
     flex-direction: column;
