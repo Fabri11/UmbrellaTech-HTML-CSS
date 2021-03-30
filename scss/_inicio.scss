@@ -434,8 +434,66 @@ p {
     }
 }
 
+@media screen and (max-width: 541px) {
+    /* Inicio */
+    /* Clientes */
+    .titulo__clientes {
+        padding: 20px;
+        margin: 0;
+    }
 
-@media screen and (max-width:840px) {
+    .clientes__contenedor {
+        padding: 0;
+    }
+
+    .cards .cards__card {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cards {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .cards__card {
+        display: inline-flex;
+        flex-direction: column;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    .cards .cards__card .img__card .img__card-2 {
+        width: 90px;
+        height: 90px;
+    }
+
+    .contenido-texto-card p {
+        display: flex;
+        flex-direction: row;
+        width: 30%;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Productos inicio */
+    .contenedor__productos {
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .col-3 {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
+@media screen and (max-width:800px) {
 
     /* Cliente */
     .cards {
@@ -448,7 +506,7 @@ p {
         display: inline-flex;
         flex-direction: column;
         margin: auto;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .contenido-texto-card {
