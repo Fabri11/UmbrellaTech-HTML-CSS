@@ -183,7 +183,7 @@ h2 {
 }
 
 .comprar__pro {
-  margin-left:25%;
+  margin-left: 25%;
   margin-right: 25%;
 }
 
@@ -815,7 +815,7 @@ p {
     margin-top: 50px;
   }
 
-  .comprar{
+  .comprar {
     margin-left: 14%;
   }
 }
@@ -1171,7 +1171,7 @@ tr:hover td {
 @media screen and (max-width: 540px) {
   .texto__principal--producto {
     text-align: center;
-    margin:50px 0;
+    margin: 50px 0;
   }
 
   .text__notebook {
@@ -1375,8 +1375,8 @@ tr:hover td {
   width: 100%;
   height: 600px;
   background: #4F80F5;
-  background: -webkit-linear-gradient(to right, rgba(81, 131, 245, 0.593), rgba(78, 93, 126, 0.593)), url(../assets/banner/call_of_duty_black_ops_ii_2012-wallpaper-1280x768.jpg);
-  background: linear-gradient(to right, rgba(81, 131, 245, 0.593), rgba(78, 93, 126, 0.593)), url(../assets/banner/call_of_duty_black_ops_ii_2012-wallpaper-1280x768.jpg);
+  background: -webkit-linear-gradient(to right, rgba(81, 131, 245, 0.593), rgba(78, 93, 126, 0.593)), url(../assets/banner/assassins_creed_valhalla_video_game_ragnar_lothbrok-wallpaper-1920x1200.jpg);
+  background: linear-gradient(to right, rgba(81, 131, 245, 0.593), rgba(78, 93, 126, 0.593)), url(../assets/banner/assassins_creed_valhalla_video_game_ragnar_lothbrok-wallpaper-1920x1200.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -1385,8 +1385,8 @@ tr:hover td {
 /* Footer Cuenta */
 .footer__cuenta {
   background: #4F80F5;
-  background: -webkit-linear-gradient(to right, rgba(81, 131, 245, 0.593), rgba(78, 93, 126, 0.593)), url(../assets/banner/the_last_of_us_12-wallpaper-1280x800.jpg);
-  background: linear-gradient(to right, rgba(81, 131, 245, 0.593), rgba(78, 93, 126, 0.593)), url(../assets/banner/the_last_of_us_12-wallpaper-1280x800.jpg);
+  background: -webkit-linear-gradient(to right, rgba(81, 131, 245, 0.593), rgba(78, 93, 126, 0.593)), url(../assets/banner/gods_and_monsters_video_game_2020-wallpaper-1920x1200.jpg);
+  background: linear-gradient(to right, rgba(81, 131, 245, 0.593), rgba(78, 93, 126, 0.593)), url(../assets/banner/gods_and_monsters_video_game_2020-wallpaper-1920x1200.jpg);
   background-size: cover;
   background-attachment: fixed;
   position: relative;
@@ -1399,6 +1399,11 @@ tr:hover td {
 .text__cuenta {
   text-align: center;
   margin-bottom: 50px;
+  border-radius: 4px;
+  background-color: #f5f5f5;
+  display: inline-block;
+  margin-left: 32%;
+  padding: 10px;
 }
 
 /* Formulario cuenta */
@@ -1415,8 +1420,61 @@ tr:hover td {
   border-radius: 4px;
 }
 
+.boton__cuenta {
+  display: inline-flex;
+}
+
+.boton__enviar--boton {
+  background: #4F80F5;
+  border-radius: 4px;
+  margin: 10px 0;
+  padding: 3px;
+}
+
+.boton__limpiar--boton {
+  display: flex;
+  flex-direction: row;
+  background: #4F80F5;
+  border-radius: 4px;
+  padding: 3px;
+}
+
 
 @media screen and (max-width: 360px) {
+
+  /* Texto crear tu cuenta */
+
+  .text__cuenta {
+    text-align: center;
+    margin-bottom: 50px;
+    border-radius: 4px;
+    background-color: #f5f5f5;
+    padding: 5px;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+
+  .boton__enviar--boton {
+    display: block;
+    flex-direction: row;
+    background: #4F80F5;
+    border-radius: 4px;
+    padding: 3px;
+    margin-left: 42%;
+    margin-right: 25%;
+  }
+
+  .boton__limpiar--boton {
+    display: block;
+    flex-direction: row;
+    background: #4F80F5;
+    border-radius: 4px;
+    padding: 3px;
+    margin-left: 35%;
+    margin-right: 25%;
+  }
+
+
   /* Footer´s */
 
   .contenedor__footer--pagina {
