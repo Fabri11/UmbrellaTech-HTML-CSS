@@ -1151,6 +1151,11 @@ tr:hover td {
   margin: 24px;
 }
 
+.imagenes__note{
+  padding-top: 50px;
+  margin-left: 43%;
+}
+
 .elemento-4 {
   grid-area: "elemento";
   display: inline-block;
